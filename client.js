@@ -1,10 +1,21 @@
 $(document).ready(readyNow);
 function readyNow() {
   //submit click listener
-  $('#submit').on('click', submit);
+  $('#submit').on('click', submitClickHandler);
 }
 
 //function to collect the info and push to dom
+function submitClickHandler() {
+  let name = $('#first-name-in').val();
+  $('#employee-table').append(`<tr>
+  <td></td>
+  <td>${name}</td>
+  <td>Hello</td>
+  <td>Hello</td>
+  <td>Hello</td>
+  <td>Hello</td>`);
+  console.log();
+}
 
 //The application should have an input form that collects:
 // employee:
