@@ -5,27 +5,41 @@ function readyNow() {
   $('#employee-table').on('click', '#delete', deleteClickHandler);
 }
 let monthlyCounter = 0;
+// let employees = [];
+// const employeeObject = {
+//   firstName: firstNameInput,
+//   lastName: lastNameInput,
+//   idNumber: idNumberInput,
+//   jobTitle: jobTitleInput,
+//   annualSalary: annualSalaryInput,
+// };
 //function to collect the info and append to dom
 function submitClickHandler() {
-  let firstName = $('#first-name-in').val();
-  let lastName = $('#last-name-in').val();
-  let idNumber = $('#id-number-in').val();
-  let jobTitle = $('#job-title-in').val();
-  let annualSalary = $('#annual-salary-in').val();
+  let firstNameInput = $('#first-name-in').val();
+  let lastNameInput = $('#last-name-in').val();
+  let idNumberInput = $('#id-number-in').val();
+  let jobTitleInput = $('#job-title-in').val();
+  let annualSalaryInput = $('#annual-salary-in').val();
+  // employees.push(employeeObject);
 
   //  $('.monthly-counter').val();
   $('#employee-table').append(`<tr>
-  <td class ='table-row'>${firstName}</td>
-  <td class ='table-row'>${lastName}</td>
-  <td class ='table-row'>${idNumber}</td>
-  <td class ='table-row'>${jobTitle}</td>
-  <td class ='table-row'>${annualSalary}</td>
+  <td class ='table-row'>${firstNameInput}</td>
+  <td class ='table-row'>${lastNameInput}</td>
+  <td class ='table-row'>${idNumberInput}</td>
+  <td class ='table-row'>${jobTitleInput}</td>
+  <td class ='table-row'>${annualSalaryInput}</td>
   <td class ='table-row'> <button id="delete">Delete</button</td>`);
   // add annual salary to total monthly costs and append to the DOM
+
   monthlyCounter += Number($('#annual-salary-in').val());
   $('.monthly-counter').empty();
   $('.monthly-counter').append(monthlyCounter);
   $('input').val('');
+  // If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+  if (monthlyCounter > 20000) {
+    $('.total-monthly').addClass('monthlyCounterRed');
+  }
 }
 //delete button, deletes the entire employee row when clicked on.
 function deleteClickHandler() {

@@ -1,3 +1,8 @@
 table, th, td {
     border: 1px solid black;
   }
+
+  .monthlyCounterRed{
+    background-color: red;
+    margin-inline-end: 800px;
+  }
