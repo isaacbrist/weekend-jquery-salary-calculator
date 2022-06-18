@@ -4,14 +4,16 @@ function readyNow() {
   $('#submit').on('click', submitClickHandler);
   $('#employee-table').on('click', '#delete', deleteClickHandler);
 }
-
-//function to collect the info and push to dom
+let monthlyCounter = 0;
+//function to collect the info and append to dom
 function submitClickHandler() {
   let firstName = $('#first-name-in').val();
   let lastName = $('#last-name-in').val();
   let idNumber = $('#id-number-in').val();
   let jobTitle = $('#job-title-in').val();
   let annualSalary = $('#annual-salary-in').val();
+
+  //  $('.monthly-counter').val();
   $('#employee-table').append(`<tr>
   <td class ='table-row'>${firstName}</td>
   <td class ='table-row'>${lastName}</td>
@@ -19,13 +21,18 @@ function submitClickHandler() {
   <td class ='table-row'>${jobTitle}</td>
   <td class ='table-row'>${annualSalary}</td>
   <td class ='table-row'> <button id="delete">Delete</button</td>`);
+  // add annual salary to total monthly costs and append to the DOM
+  monthlyCounter += Number($('#annual-salary-in').val());
+  $('.monthly-counter').empty();
+  $('.monthly-counter').append(monthlyCounter);
   $('input').val('');
 }
-
+//delete button, deletes the entire employee row when clicked on.
 function deleteClickHandler() {
   $(this).parent().parent().remove();
   console.log('deleted');
 }
+
 //The application should have an input form that collects:
 // employee:
 // first name,
