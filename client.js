@@ -35,7 +35,6 @@ function submitClickHandler() {
 //delete button, deletes the entire employee row when clicked on.
 function deleteClickHandler() {
   $(this).parent().parent().remove();
-  console.log('deleted');
 }
 
 // I wasn't sure if it was required to create an object for all of the employees.

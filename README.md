@@ -7,13 +7,13 @@
 
 ## Description
 
-\_Duration: Base Mode: 3-4 Hours. Stretch Mode: 3-4 Hours
+Duration: Base Mode: 3-4 Hours. Stretch Mode: 3-4 Hours
 
 I needed to create a salary calculator that had inputs form that could collect an employee's first name, last name, ID number, job title, and annual salary.
 
 I needed to add a 'Submit' button that would store the information to calculate monthly costs and append the information to the DOM and clear the input fields. I also needed to use the stored information to calculate monthly costs and append this to the DOM. Once the total monthly cost exceeds $20,000, there will be a red background color that appears around the total monthly cost.
 
-I created a delete button that removes an employee from the DOM. Currently it does not remove that employee's salary from the reported total.
+I created a delete button that removes an employee from the DOM. Currently, it does not remove that employee's salary from the reported total.
 
 ## Screen Shot
 
