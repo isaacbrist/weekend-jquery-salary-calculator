@@ -1,8 +1,56 @@
+
+body{
+  text-align: center;
+ 
+}
 table, th, td {
     border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   .monthlyCounterRed{
     background-color: red;
-    margin-inline-end: 800px;
+    margin-inline-start: 350px;
+    margin-inline-end: 350px;
   }
+  tr:nth-child(even){background-color: #f2f2f2;}
+.table-header{
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.input-fields{
+  border: 2px solid lightgreen;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+}
+
+#submit{
+  
+    width: 100px;
+    height:30px;
+    border: none;
+    outline: none;
+    background: #04AA6D;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px;
+    text-align: center;
+
+    position: relative;
+    cursor: pointer;
+}
+#submit:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px -5px  #3ead49;
+}

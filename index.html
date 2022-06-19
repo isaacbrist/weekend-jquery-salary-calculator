@@ -12,29 +12,56 @@
   <body>
     <h1>Salary Calculator</h1>
     <div>
-      <input type="text" id="first-name-in" placeholder="First Name" />
-      <input type="text" id="last-name-in" placeholder="Last Name" />
-      <input type="number" id="id-number-in" placeholder="ID Number" />
-      <input type="text" id="job-title-in" placeholder="Job Title" />
-      <input type="number" id="annual-salary-in" placeholder="Annual Salary" />
+      <input
+        type="text"
+        class="input-fields"
+        id="first-name-in"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        class="input-fields"
+        id="last-name-in"
+        placeholder="Last Name"
+      />
+      <input
+        type="number"
+        class="input-fields"
+        id="id-number-in"
+        placeholder="ID Number"
+      />
+      <input
+        type="text"
+        class="input-fields"
+        id="job-title-in"
+        placeholder="Job Title"
+      />
+      <input
+        type="number"
+        class="input-fields"
+        id="annual-salary-in"
+        placeholder="Annual Salary"
+      />
       <button id="submit">Submit</button>
     </div>
     <main>
       <h2>Add Employee</h2>
       <table>
         <thead>
-          <tr>
+          <tr class="table-header">
             <th>First name</th>
             <th>Last Name</th>
             <th>ID</th>
             <th>Job Title</th>
             <th>Annual Salary</th>
-            <th>Empty</th>
+            <th></th>
           </tr>
         </thead>
         <tbody id="employee-table"></tbody>
       </table>
-      <h3 class = "total-monthly">Total Monthly: $<span class="monthly-counter">0</span></h3>
+      <h3 class="total-monthly">
+        Total Monthly: $<span class="monthly-counter">0</span>
+      </h3>
     </main>
   </body>
 </html>

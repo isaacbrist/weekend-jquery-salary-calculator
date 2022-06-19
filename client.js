@@ -22,7 +22,6 @@ function submitClickHandler() {
   let annualSalaryInput = $('#annual-salary-in').val();
   // employees.push(employeeObject);
 
-  //  $('.monthly-counter').val();
   $('#employee-table').append(`<tr>
   <td class ='table-row'>${firstNameInput}</td>
   <td class ='table-row'>${lastNameInput}</td>
