@@ -7,7 +7,7 @@
 
 ## Description
 
-\Duration: Base Mode: 3-4 Hours. Stretch Mode: 3-4 Hours
+Duration: Base Mode: 3-4 Hours. Stretch Mode: 3-4 Hours
 
 I needed to create a salary calculator that had inputs form that could collect an employee's first name, last name, ID number, job title, and annual salary.
 
