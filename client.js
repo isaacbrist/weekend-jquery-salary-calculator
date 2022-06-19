@@ -23,7 +23,7 @@ function submitClickHandler() {
   <td class ='table-row'> <button id="delete">Delete</button</td>`);
   // add annual salary to total monthly costs and append to the DOM
 
-  monthlyCounter += Number($('#annual-salary-in').val());
+  monthlyCounter += Math.round(annualSalaryInput / 12);
   $('.monthly-counter').empty();
   $('.monthly-counter').append(monthlyCounter);
   $('input').val('');
