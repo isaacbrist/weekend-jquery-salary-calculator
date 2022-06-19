@@ -22,8 +22,6 @@ I created a delete button that removes an employee from the DOM. Currently, it d
 
 ## Usage
 
-How does someone use this application? Tell a user story here.
-
 1. Fill out your employee input fields.
 2. Click submit
 3. You will see them added to the table
